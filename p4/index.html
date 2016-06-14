@@ -5,9 +5,34 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Prueba Javascript G4</title>
 	<link rel="stylesheet" href="">
+	<style>
+		.col6{
+			float:left;
+			width: 50%;
+		}
+	</style>
 </head>
 <body>
-	
+	<div class="col6">
+		<textarea name="txt_texto" id="txt_texto" cols="100" rows="10"></textarea>		
+	</div>
+	<div class="col6">		
+		<p id="p_texto"></p>
+	</div>
+	<div class="col6">
+		<label for="txt_color">Cambiar color</label>
+		<input type="color" id="txt_color">
+		<label for="txt_size">Cambiar Tamaño</label>
+		<input type="number" id="txt_size" name="txt_size">
+		<label for="select_font">Cambiar Tipografia</label>
+		<select name="select_font" id="select_font">
+			<option value="Times New Roman">Times New Roman</option>
+			<option value="Arial">Arial</option>
+			<option value="Helvetica">Helvetica</option>
+		</select>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script src="main.js"></script>
 </body>
 </html>
